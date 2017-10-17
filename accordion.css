@@ -16,7 +16,6 @@ main {
   align-items: center;
   flex-direction: column;
   padding: 75px 90px;
-  height: 100%;
 }
 
 h1,
@@ -206,7 +205,7 @@ h3 {
 
 /*MEDIA QUERIES*/
 
-@media screen and (max-width: 1840px) {
+/*@media screen and (max-width: 1840px) {
   .placeholder {
     height: 50vh;
   }
@@ -342,6 +341,135 @@ h3 {
 
 /*MOBILE MEDIA QUERIES*/
 
-@media screen and (max-width: 750px) {
+/*@media screen and (max-width: 1000px) {
+  header {
+    padding: 25px 60px;
+  }
 
+  main {
+    padding: 50px 60px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .student-name {
+    font-size: 20px;
+  }
+
+  .acc-article {
+      padding: 25px 20px;
+  }
+
+  .acc-h2 {
+    font-size: 20px;
+  }
+
+  .tab {
+    padding: 13px 8px 12px 8px;
+    font-size: 18px;
+  }
+
+  .acc-h2 {
+    font-size: 16px;
+  }
+
+  .acc-header {
+    margin-bottom: 70px;
+  }
+
+  .acc-header hr {
+    width: 65%;
+  }
+
+  .acc-text {
+    padding: 10px 0 0 30px;
+  }
+
+  h3 {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .acc-text p {
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+
+}*/
+
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 10vh;
+  }
+
+  .header-hr {
+    display: block;
+    width: 15%;
+    background-color: #3F3244;
+    border: none;
+    height: 2px;
+  }
+
+  .acc-header {
+    flex-direction: column;
+  }
+
+  .acc-header hr {
+    width: 45%;
+  }
+
+  .acc-h2 {
+    margin-bottom: 20px;
+  }
+
+  .acc-tabs {
+    width: 100%;
+  }
+
+  .tab-container {
+    display: none;
+  }
+
+  .acc-article {
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .tab {
+    width: 0;
+    border-top: 2px solid #D1D2D3;
+  }
+
+  .mobile-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tab-btn {
+    display: block;
+  }
+
+  .acc-content {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .placeholder {
+    height: 20vh;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .acc-text {
+    width: 90%;
+  }
+
+  .acc-text p:nth-of-type(2) {
+    margin-bottom: 45px;
+  }
 }
