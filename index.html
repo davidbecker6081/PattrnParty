@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Pattrn Party</title>
+    <link rel="stylesheet" href="normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
     <link rel="stylesheet" href="accordion.css">
   </head>
   <body>
 
     <header>
-      <h1>PATTRN <span class="header-span">PARTY</span></h1>
+      <h1>PATTRN <span class="h1-span">PARTY</span></h1>
       <hr class="header-hr">
       <p class="student-name">David Becker</p>
     </header>
@@ -18,16 +19,31 @@
       <!-- Accordion (acc)-->
       <section class="acc-container">
         <div class="acc-header">
-          <h2 class="acc">ACCORDION TABS</h2>
+          <h2 class="acc-h2">ACCORDION TABS</h2>
           <hr>
         </div>
 
         <div class="acc-tabs">
 
-          <article class="acc-article">
+          <div class="tab-container">
             <div class="tab tab-active">
               <p>Tab 1</p>
-              <button type="button">-</button>
+            </div>
+            <div class="tab">
+              <p>Tab 2</p>
+            </div>
+            <div class="tab">
+              <p>Tab 3</p>
+            </div>
+            <div class="tab">
+              <p>Tab 4</p>
+            </div>
+          </div>
+
+          <article class="acc-article acc-article-active">
+            <div class="tab tab-active mobile-tab">
+              <p>Tab 1</p>
+              <button class="tab-btn">-</button>
             </div>
             <div class="acc-content acc-content-active">
               <div class="placeholder"></div>
@@ -41,9 +57,9 @@
           </article>
 
           <article class="acc-article">
-            <div class="tab">
+            <div class="tab tab-active mobile-tab">
               <p>Tab 2</p>
-              <button type="button">+</button>
+              <button class="tab-btn">+</button>
             </div>
             <div class="acc-content">
               <div class="placeholder"></div>
@@ -57,9 +73,9 @@
           </article>
 
           <article class="acc-article">
-            <div class="tab">
+            <div class="tab tab-active mobile-tab">
               <p>Tab 3</p>
-              <button type="button">+</button>
+              <button class="tab-btn">+</button>
             </div>
             <div class="acc-content">
               <div class="placeholder"></div>
@@ -73,9 +89,9 @@
           </article>
 
           <article class="acc-article">
-            <div class="tab">
+            <div class="tab tab-active mobile-tab">
               <p>Tab 4</p>
-              <button type="button">+</button>
+              <button class="tab-btn">+</button>
             </div>
             <div class="acc-content">
               <div class="placeholder"></div>
