@@ -199,3 +199,149 @@ h3 {
   font-size: 30px;
   line-height: 1.4;
 }
+
+.acc-text p:nth-of-type(2) {
+  margin-bottom: 0;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 1840px) {
+  .placeholder {
+    height: 50vh;
+  }
+
+  .acc-text p {
+    font-size: 28px;
+  }
+
+  .acc-header hr {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1590px) {
+  .tab {
+    font-size: 26px;
+  }
+
+  .placeholder {
+    height: 45vh;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  .acc-text p {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1395px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .student-name {
+    font-size: 25px;
+  }
+
+  .acc-h2 {
+    font-size: 25px;
+  }
+
+  .tab {
+    padding: 25px 20px 15px 20px;
+    font-size: 24px;
+  }
+
+  .placeholder {
+    height: 40vh;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  .acc-text {
+    padding: 30px 0 0 50px;
+  }
+
+  .acc-text p {
+    font-size: 17px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .tab {
+    padding: 20px 15px 20px 15px;
+    font-size: 20px;
+  }
+
+  .placeholder {
+    height: 35vh;
+  }
+
+  h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .acc-text {
+    padding: 25px 0 0 45px;
+  }
+
+  .acc-text hr {
+    margin-bottom: 30px;
+  }
+
+  .acc-text p {
+    margin-bottom: 30px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  .student-name {
+    font-size: 22px;
+  }
+
+  .acc-article {
+      padding: 30px 25px;
+  }
+
+  .acc-h2 {
+    font-size: 22px;
+  }
+
+  .tab {
+    padding: 15px 10px 15px 10px;
+    font-size: 18px;
+  }
+
+  .acc-text {
+    padding: 15px 0 0 35px;
+  }
+
+  h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .acc-text p {
+    margin-bottom: 30px;
+    font-size: 15px;
+  }
+}
+
+/*MOBILE MEDIA QUERIES*/
+
+@media screen and (max-width: 750px) {
+
+}
