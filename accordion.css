@@ -205,7 +205,7 @@ h3 {
 
 /*MEDIA QUERIES*/
 
-/*@media screen and (max-width: 1840px) {
+@media screen and (max-width: 1840px) {
   .placeholder {
     height: 50vh;
   }
@@ -341,7 +341,7 @@ h3 {
 
 /*MOBILE MEDIA QUERIES*/
 
-/*@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
   header {
     padding: 25px 60px;
   }
@@ -371,6 +371,10 @@ h3 {
     font-size: 18px;
   }
 
+  .placeholder {
+    height: 25vh;
+  }
+
   .acc-h2 {
     font-size: 16px;
   }
@@ -384,26 +388,39 @@ h3 {
   }
 
   .acc-text {
+    height: 25vh;
     padding: 10px 0 0 30px;
+    overflow: scroll;
   }
 
   h3 {
     margin-bottom: 15px;
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .acc-text p {
     margin-bottom: 20px;
-    font-size: 13px;
+    font-size: 15px;
   }
 
-}*/
+}
+
 
 @media screen and (max-width: 600px) {
   header {
     flex-direction: column;
     justify-content: space-between;
     height: 10vh;
+    padding: 20px 0;
+    position: fixed;
+    width: 100vw;
+    z-index: 9999;
+  }
+
+  main {
+    top: 150px;
+    padding: 50px 30px;
+    position: relative;
   }
 
   .header-hr {
@@ -419,11 +436,19 @@ h3 {
   }
 
   .acc-header hr {
-    width: 45%;
+    width: 15%;
   }
 
   .acc-h2 {
     margin-bottom: 20px;
+  }
+
+  .acc-article {
+    display: flex;
+  }
+
+  .acc-article:nth-of-type(4) {
+    border-bottom: 2px solid #D1D2D3;
   }
 
   .acc-tabs {
@@ -439,19 +464,26 @@ h3 {
     border-bottom: none;
   }
 
-  .tab {
-    width: 0;
+  .mobile-tab {
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+    z-index: 0;
+    border: none;
     border-top: 2px solid #D1D2D3;
   }
 
-  .mobile-tab {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .mobile-tab p {
+    display: inline-block;
+    float: left;
+    width: 20%;
   }
 
-  .tab-btn {
+  .fa-minus {
     display: block;
+    float: right;
+    margin-right: 15px;
+    font-size: 50px;
   }
 
   .acc-content {
@@ -466,6 +498,9 @@ h3 {
   }
 
   .acc-text {
+    height: auto;
+    overflow: visible;
+    padding: 0;
     width: 90%;
   }
 
