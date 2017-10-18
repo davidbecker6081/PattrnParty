@@ -165,6 +165,10 @@ h1 {
 }
 
 .acc-content {
+  display: none;
+}
+
+.acc-content-active {
   display: flex;
 }
 
@@ -439,6 +443,10 @@ h3 {
     width: 15%;
   }
 
+  .acc-container {
+    width: 100%;
+  }
+
   .acc-h2 {
     margin-bottom: 20px;
   }
@@ -479,7 +487,8 @@ h3 {
     width: 20%;
   }
 
-  .fa-minus {
+  .fa-minus,
+  .fa-plus {
     display: block;
     float: right;
     margin-right: 15px;
