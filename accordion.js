@@ -17,17 +17,21 @@ $(window).on('resize', () => {
 $('.mobile-tab').on('click', (e) => {
   const selectedArticle = $(e.target).parent().find('.acc-content');
   const selectedTabBtn = $(e.target).find('.fa')
+  const selectedParent = $(e.target).parent()
 
   if (selectedArticle.hasClass('acc-content-active')) {
     selectedArticle.removeClass('acc-content-active')
     selectedTabBtn.addClass('fa-plus')
     selectedTabBtn.removeClass('fa-minus')
+    selectedParent.removeClass('acc-article-active')
   } else {
     $('.acc-content-active').each((i, elem) => {
+      $(elem).parent().removeClass('acc-article-active')
       $(elem).removeClass('acc-content-active')
       $(elem).parents().find('.fa').addClass('fa-plus')
       $(elem).parents().find('.fa').removeClass('fa-minus')
     })
+    selectedParent.addClass('acc-article-active')
     selectedArticle.addClass('acc-content-active')
     selectedTabBtn.addClass('fa-minus')
     selectedTabBtn.removeClass('fa-plus')
