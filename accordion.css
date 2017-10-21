@@ -68,7 +68,7 @@ h1 {
   display: none;
 }
 
-.acc-header {
+.section-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -76,12 +76,12 @@ h1 {
   width: 100%;
 }
 
-.acc-h2 {
+.section-h2 {
   font-size: 2vw;
   font-weight: 300;
 }
 
-.acc-header hr {
+.section-header hr {
   height: 0.5px;
   width: 65%;
   border: 0.5px solid #D1D2D3;
@@ -135,7 +135,7 @@ h1 {
 
 /*ACCORDION ARTICLES*/
 
-.acc-container {
+.section-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -231,21 +231,21 @@ h3 {
     font-size: 20px;
   }
 
-  .acc-container {
+  .section-container {
     border: 2px solid #D1D2D3;
     border-top: none;
   }
 
-  .acc-header {
+  .section-header {
     flex-direction: column;
   }
 
-  .acc-h2 {
+  .section-h2 {
     margin-bottom: 20px;
     font-size: 20px;
   }
 
-  .acc-header hr {
+  .section-header hr {
     width: 20%;
   }
 
