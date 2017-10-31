@@ -1,3 +1,15 @@
+/*#34D1D1
+#2F2235
+#3F3244
+#F2F2F2
+#D1D2D3
+#666666
+#000000*/
+/*font-family: 'Open Sans', sans-serif;*/
+
+.header-container {
+  border: none;
+}
 .header-bar {
   padding: 25px;
   width: 100%;
@@ -8,7 +20,7 @@
   height: 6vw;
   width: 6vw;
   background-color: #F2F2F2;
-  border: 1px solid #666666;
+  border: 1px solid rgba(102, 102, 102, 0.5);
   border-radius: 50%;
 }
 
@@ -25,20 +37,111 @@
   text-decoration: none;
 }
 
+.header-nav-search a:hover {
+  color: #3F3244;
+}
+
+.input-wrapper:before {
+  color: #666666;
+  font-size: 1.8vw;
+  font-family: 'FontAwesome';
+  position: relative;
+  z-index: 10;
+  left: 10%;
+  content: "\f002";
+}
+
 .header-search-input {
+  position: relative;
   height: 4vw;
-  padding: 0 5px;
+  padding: 0 12%;
   width: 20vw;
-  border: 1px solid #666666;
+  border: 1px solid rgba(102, 102, 102, 0.5);
   font-family: 'Open Sans', sans-serif;
   font-size: 1.6vw;
   outline-style: none;
 }
 
-.header-search-input::before {
-  content: url('./assets/search.png');
-  position: relative;
-  z-index: 10;
-  left: 50px;
-  top: 10px;
+.header-bar-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3.5vw;
+  outline-style: none;
+}
+
+
+@media screen and (max-width: 700px) {
+  .header-bar {
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .logo-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    width: 100%;
+  }
+
+  .header-bar-btn {
+    display: block;
+  }
+
+  .header-bar-btn:hover {
+    color: #3F3244;
+    cursor: pointer;
+  }
+
+  .header-nav-search {
+    display: none;
+    background-color: #F2F2F2;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 35px;
+    order: 2;
+    width: 100%;
+  }
+
+  .header-active {
+    display: flex;
+  }
+
+  .header-nav-search a {
+    margin-bottom: 30px;
+    font-size: 3.5vw;
+  }
+
+  .header-nav-search a:nth-last-of-type(1) {
+    margin-bottom: 0;
+  }
+
+  .input-wrapper {
+    width: 90%;
+  }
+
+  .header-search-input {
+    width: 100%;
+  }
+
+  .input-wrapper:before {
+    position: relative;
+    font-size: 4vw;
+    top: 6.5vw;
+    left: 2%;
+  }
+
+  .header-search-input {
+    padding: 10px 10%;
+    height: 100%;
+    font-size: 3.5vw;
+  }
+
 }

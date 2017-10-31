@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pattrn Party</title>
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
     <link rel="stylesheet" href="accordion.css">
     <link rel="stylesheet" href="flex-cards.css">
@@ -129,15 +130,24 @@
         <hr>
       </div>
 
-      <section class="section-container">
+      <section class="section-container header-container">
         <header class="header-bar">
-          <div class="header-bar-logo"></div>
+
+          <div class="logo-menu">
+            <div class="header-bar-logo"></div>
+            <button class="header-bar-btn" type="button">MENU</button>
+          </div>
+
           <article class="header-nav-search">
             <a href="#" target="_blank" rel="noreferrer">Navigation Link 1</a>
             <a href="#" target="_blank" rel="noreferrer">Navigation Link 2</a>
             <a href="#" target="_blank" rel="noreferrer">Navigation Link 3</a>
-            <input class="header-search-input" type="text" placeholder="Search" />
+
+            <div class="input-wrapper">
+              <input class="header-search-input" type="text" placeholder="Search" />
+            </div>
           </article>
+
         </header>
       </section>
 
@@ -147,5 +157,6 @@
     <script src="https://use.fontawesome.com/71dc415965.js"></script>
     <script src="jquery.js" charset="utf-8"></script>
     <script src="accordion.js" charset="utf-8"></script>
+    <script src="header.js" charset="utf-8"></script>
   </body>
 </html>
