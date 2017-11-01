@@ -6,15 +6,15 @@ Wouldn’t it be nice if we had a base template we could refer back to so we cou
 
 [Link to Live Site](https://davidbecker6081.github.io/PattrnParty/)
 
-###Accordion Tabs
+### Accordion Tabs
 
 ![User Interface](https://i.imgur.com/DJQ5xeK.png)
 
-###Flexible Cards
+### Flexible Cards
 
 ![Flexible Cards](https://i.imgur.com/ThHmefw.png)
 
-###Header Bar
+### Header Bar
 
 ![Header Bar](https://i.imgur.com/43Jr9rh.png)
 
